@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional BMI Calculator - Calculate your Body Mass Index with detailed health insights">
+  <meta name="description"
+    content="Professional BMI Calculator - Calculate your Body Mass Index with detailed health insights">
   <meta name="theme-color" content="#007BFF">
   <title>BMI Calculator - Professional Health Tool</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23007BFF'>⚕️</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23007BFF'>⚕️</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="skip-link">
-    <a href="#main-content">Skip to main content</a>
-  </div>
+  
 
   <header class="app-header">
     <div class="container">
@@ -24,30 +26,18 @@
   <main id="main-content" class="main-content">
     <div class="container">
       <div class="calculator-wrapper">
-        
+
         <!-- Unit Toggle -->
         <fieldset class="unit-selector">
           <legend>Unit System</legend>
           <div class="radio-group">
             <label class="radio-label">
-              <input 
-                type="radio" 
-                name="units" 
-                value="metric" 
-                checked 
-                aria-label="Metric units (kg/cm)"
-                id="unit-metric"
-              >
+              <input type="radio" name="units" value="metric" checked aria-label="Metric units (kg/cm)"
+                id="unit-metric">
               <span>Metric (kg/cm)</span>
             </label>
             <label class="radio-label">
-              <input 
-                type="radio" 
-                name="units" 
-                value="imperial" 
-                aria-label="Imperial units (lbs/in)"
-                id="unit-imperial"
-              >
+              <input type="radio" name="units" value="imperial" aria-label="Imperial units (lbs/in)" id="unit-imperial">
               <span>Imperial (lbs/in)</span>
             </label>
           </div>
@@ -57,46 +47,21 @@
         <form id="bmi-form" class="bmi-form" novalidate>
           <div class="form-group">
             <label for="weight">Weight <span class="unit-label" id="weight-unit">(kg)</span></label>
-            <input 
-              type="number" 
-              id="weight" 
-              placeholder="Enter weight" 
-              min="1" 
-              max="500"
-              step="0.1"
-              required
-              aria-required="true"
-              aria-describedby="weight-help"
-            />
+            <input type="number" id="weight" placeholder="Enter weight" min="1" max="500" step="0.1" required
+              aria-required="true" aria-describedby="weight-help" />
             <small id="weight-help" class="help-text"></small>
           </div>
 
           <div class="form-group">
             <label for="height">Height <span class="unit-label" id="height-unit">(cm)</span></label>
-            <input 
-              type="number" 
-              id="height" 
-              placeholder="Enter height" 
-              min="50" 
-              max="300"
-              step="0.1"
-              required
-              aria-required="true"
-              aria-describedby="height-help"
-            />
+            <input type="number" id="height" placeholder="Enter height" min="50" max="300" step="0.1" required
+              aria-required="true" aria-describedby="height-help" />
             <small id="height-help" class="help-text"></small>
           </div>
 
           <div class="form-group">
             <label for="age">Age <span class="optional">(Optional)</span></label>
-            <input 
-              type="number" 
-              id="age" 
-              placeholder="Enter age" 
-              min="1" 
-              max="150"
-              aria-describedby="age-help"
-            />
+            <input type="number" id="age" placeholder="Enter age" min="1" max="150" aria-describedby="age-help" />
             <small id="age-help" class="help-text">For more personalized health insights</small>
           </div>
 
@@ -186,7 +151,8 @@
         <section class="history-section" id="history-section" hidden>
           <div class="history-header">
             <h3>Calculation History</h3>
-            <button type="button" class="btn btn-small btn-danger" id="clear-history-btn" aria-label="Clear all history">
+            <button type="button" class="btn btn-small btn-danger" id="clear-history-btn"
+              aria-label="Clear all history">
               Clear All
             </button>
           </div>
@@ -198,14 +164,15 @@
 
   <footer class="app-footer">
     <div class="container">
-      <p><strong>Disclaimer:</strong> This calculator provides general estimates. Always consult healthcare professionals for medical advice.</p>
+      <p><strong>Disclaimer:</strong> This calculator provides general estimates. Always consult healthcare
+        professionals for medical advice.</p>
       <p>&copy; 2026 BMI Calculator. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Error Toast -->
-  <div id="error-toast" class="toast toast-error" role="alert" aria-live="assertive"></div>
+  
 
   <script src="app.js"></script>
 </body>
+
 </html>

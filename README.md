@@ -5,11 +5,13 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 ## 🌟 Features
 
 ### Core Functionality
+
 - **Accurate BMI Calculation** - Supports both Metric (kg/cm) and Imperial (lbs/in) units
 - **Real-time Validation** - Input validation with helpful error messages
 - **Multiple BMI Categories** - Underweight, Normal, Overweight, Obese
 
 ### Advanced Features
+
 - **Health Tips** - Personalized recommendations based on BMI category
 - **BMR Calculation** - Basal Metabolic Rate (Mifflin-St Jeor equation)
 - **TDEE Estimation** - Total Daily Energy Expenditure calculation
@@ -19,6 +21,7 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 - **Dark Mode Support** - Automatic light/dark mode based on system preferences
 
 ### User Experience
+
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
 - **Keyboard Support** - Press Enter to calculate
 - **Toast Notifications** - Real-time feedback messages
@@ -26,6 +29,7 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 - **Touch-Friendly** - Optimized for mobile interaction
 
 ### Accessibility (WCAG 2.1 Compliant)
+
 - **Semantic HTML5** - Proper markup for screen readers
 - **ARIA Labels** - Complete accessibility attributes
 - **Keyboard Navigation** - Full keyboard support
@@ -46,6 +50,7 @@ bmi-calculator/
 ## 🚀 Getting Started
 
 ### Quick Start
+
 1. Open `index.html` in a web browser
 2. Select your unit system (Metric or Imperial)
 3. Enter your weight and height
@@ -55,6 +60,7 @@ bmi-calculator/
 ### Deployment Options
 
 #### GitHub Pages
+
 ```bash
 # Push to your GitHub repository
 git add .
@@ -66,18 +72,21 @@ git push origin main
 ```
 
 #### Netlify
+
 ```bash
 # Connect your GitHub repo
 # Deploy automatically on push
 ```
 
 #### Vercel
+
 ```bash
 # Import from GitHub
 # Deploy with zero configuration
 ```
 
 #### Docker
+
 ```dockerfile
 FROM nginx:alpine
 COPY bmi-calculator/ /usr/share/nginx/html/
@@ -87,28 +96,34 @@ EXPOSE 80
 ## 📊 Health Formulas
 
 ### BMI Calculation
+
 **Metric:** `BMI = weight (kg) / (height (m)²)`
 **Imperial:** `BMI = (weight (lbs) / (height (in)²)) × 703`
 
 ### BMR (Basal Metabolic Rate)
+
 **Mifflin-St Jeor Equation:**
 
 For men:
+
 ```
 BMR = (10 × weight(kg)) + (6.25 × height(cm)) - (5 × age) + 5
 ```
 
 For women:
+
 ```
 BMR = (10 × weight(kg)) + (6.25 × height(cm)) - (5 × age) - 161
 ```
 
 ### TDEE (Total Daily Energy Expenditure)
+
 ```
 TDEE = BMR × Activity Multiplier (1.55 for moderate activity)
 ```
 
 ### Ideal Weight Range
+
 ```
 Min: 18.5 × (height in meters)²
 Max: 24.9 × (height in meters)²
@@ -116,12 +131,12 @@ Max: 24.9 × (height in meters)²
 
 ## 🎨 BMI Categories
 
-| Category | BMI Range | Status |
-|----------|-----------|--------|
-| Underweight | < 18.5 | Below healthy range |
-| Normal Weight | 18.5 - 24.9 | Healthy range |
-| Overweight | 25.0 - 29.9 | Above healthy range |
-| Obese | ≥ 30 | Requires attention |
+| Category      | BMI Range   | Status              |
+| ------------- | ----------- | ------------------- |
+| Underweight   | < 18.5      | Below healthy range |
+| Normal Weight | 18.5 - 24.9 | Healthy range       |
+| Overweight    | 25.0 - 29.9 | Above healthy range |
+| Obese         | ≥ 30        | Requires attention  |
 
 ## 🔒 Security Features
 
@@ -133,14 +148,14 @@ Max: 24.9 × (height in meters)²
 
 ## 🌐 Browser Support
 
-| Browser | Support |
-|---------|---------|
-| Chrome | ✅ Latest |
-| Firefox | ✅ Latest |
-| Safari | ✅ Latest |
-| Edge | ✅ Latest |
-| IE 11 | ⚠️ Partial (no flexbox full support) |
-| Mobile Browsers | ✅ All modern |
+| Browser         | Support                              |
+| --------------- | ------------------------------------ |
+| Chrome          | ✅ Latest                            |
+| Firefox         | ✅ Latest                            |
+| Safari          | ✅ Latest                            |
+| Edge            | ✅ Latest                            |
+| IE 11           | ⚠️ Partial (no flexbox full support) |
+| Mobile Browsers | ✅ All modern                        |
 
 ## 📱 Responsive Breakpoints
 
@@ -174,11 +189,6 @@ This calculator provides general estimates and should not be used as a substitut
 - **FCP:** < 0.5s
 - **Zero External Requests** (when used locally)
 
-
-
-
-
-
 ## 📝 License
 
 MIT License - Feel free to use this project in your personal or commercial projects.
@@ -186,6 +196,7 @@ MIT License - Feel free to use this project in your personal or commercial proje
 ## 🤝 Contributing
 
 Contributions are welcome! Please:
+
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
@@ -194,6 +205,7 @@ Contributions are welcome! Please:
 ## 📞 Support
 
 For issues or questions:
+
 - Check the [FAQ section](#faq)
 - Review the code comments
 - Create a GitHub issue
@@ -218,6 +230,7 @@ A: Currently, history is stored locally. You can take screenshots or manually re
 ## 🚀 Future Enhancements
 
 Potential features for future versions:
+
 - [ ] Export history as CSV/PDF
 - [ ] Share results via QR code
 - [ ] Multiple language support
@@ -229,6 +242,7 @@ Potential features for future versions:
 ## 📊 Version History
 
 ### v1.0.0 (2026-05-03)
+
 - Initial production release
 - Full feature set implemented
 - Complete accessibility compliance

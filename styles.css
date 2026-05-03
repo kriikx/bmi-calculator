@@ -158,7 +158,7 @@ small {
 }
 
 /* ========================================
-   Form Elements
+   Form Section - Unit Selector
    ======================================== */
 
 .unit-selector {
@@ -199,10 +199,15 @@ small {
   outline: 2px solid var(--primary-color);
 }
 
+/* ========================================
+   Form Section - Input Form
+   ======================================== */
+
 .bmi-form {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
 }
 
 .form-group {
@@ -288,6 +293,7 @@ small {
   background-color: var(--primary-color);
   color: white;
   width: 100%;
+  margin-bottom: var(--spacing-lg);
 }
 
 .btn-primary:hover:not(:disabled) {
@@ -301,6 +307,7 @@ small {
   color: var(--dark-color);
   width: 100%;
   border: 2px solid var(--primary-color);
+  margin-top: var(--spacing-lg);
 }
 
 .btn-secondary:hover:not(:disabled) {
@@ -324,11 +331,14 @@ small {
 }
 
 /* ========================================
-   Results Section
+   Results Section - FIXED SPACING
    ======================================== */
 
 .results-section {
   animation: slideDown 0.3s ease;
+  padding-top: var(--spacing-xl);
+  border-top: 2px solid #e9ecef;
+  margin-top: var(--spacing-xl);
 }
 
 @keyframes slideDown {
@@ -342,30 +352,37 @@ small {
   }
 }
 
+/* ========================================
+   BMI Result Card - FIXED LAYOUT
+   ======================================== */
+
 .bmi-result-card {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-lg);
-  text-align: center;
+  margin-bottom: var(--spacing-xl);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: var(--spacing-lg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .bmi-value {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  min-width: 120px;
 }
 
 .bmi-value .label {
   font-size: 0.95rem;
   opacity: 0.9;
   margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.5px;
 }
 
 .bmi-value .value {
@@ -380,6 +397,10 @@ small {
   background: rgba(255, 255, 255, 0.2);
   font-weight: 600;
   font-size: 1.1rem;
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* ========================================
@@ -425,6 +446,7 @@ small {
 
 .bmi-chart {
   margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
 }
 
 .bmi-chart h3 {
@@ -486,6 +508,8 @@ small {
 
 .detailed-results {
   margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid #e9ecef;
 }
 
 .detailed-results h3 {
@@ -525,7 +549,7 @@ small {
    ======================================== */
 
 .history-section {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
   padding-top: var(--spacing-lg);
   border-top: 1px solid #e9ecef;
 }
@@ -686,6 +710,26 @@ small {
     background-color: #1a1a2e;
     color: #e0e0e0;
   }
+
+  .bmi-chart {
+    border-top-color: #3d3d5c;
+  }
+
+  .unit-selector {
+    border-bottom-color: #3d3d5c;
+  }
+
+  .results-section {
+    border-top-color: #3d3d5c;
+  }
+
+  .history-section {
+    border-top-color: #3d3d5c;
+  }
+
+  .detailed-results {
+    border-top-color: #3d3d5c;
+  }
 }
 
 /* ========================================
@@ -707,6 +751,7 @@ small {
 
   .bmi-result-card {
     padding: var(--spacing-lg);
+    flex-direction: column;
   }
 
   .bmi-value .value {
@@ -734,6 +779,12 @@ small {
 
   .history-list {
     max-height: 300px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 0.95rem;
   }
 }
 

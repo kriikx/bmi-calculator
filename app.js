@@ -1,7 +1,7 @@
 /**
- * BMI Calculator Application
+ * BMI Calculator Application - Optimized for Speed
  * Production-ready BMI calculator with advanced features
- * @version 1.0.0
+ * @version 1.1.0
  * @author kriikx
  */
 
@@ -86,12 +86,16 @@ const healthTips = {
 };
 
 /**
- * Initialize application
+ * Initialize application - OPTIMIZED FOR SPEED
  */
 function initApp() {
-  loadHistory();
   setupEventListeners();
   setPlaceholders();
+  
+  // Load history asynchronously (doesn't block app startup)
+  requestAnimationFrame(() => {
+    loadHistory();
+  });
 }
 
 /**
@@ -229,7 +233,7 @@ function validateAge() {
 }
 
 /**
- * Handle form submission
+ * Handle form submission - OPTIMIZED FOR INSTANT CALCULATION
  */
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -245,7 +249,7 @@ function handleFormSubmit(e) {
   const age = elements.ageInput.value ? parseFloat(elements.ageInput.value) : null;
   const gender = elements.genderInput.value || null;
 
-  // Calculate BMI
+  // Calculate BMI (instant - no delays)
   const bmi = calculateBMI(weight, height);
   const category = getBMICategory(bmi);
 
@@ -261,15 +265,19 @@ function handleFormSubmit(e) {
     timestamp: new Date()
   };
 
-  // Display results
+  // Display results IMMEDIATELY (no delays)
   displayResults(bmi, category, weight, height, age, gender);
 
-  // Add to history
-  addToHistory(state.lastCalculation);
-
-  // Show results section
+  // Show results section first (no animation delay)
   elements.resultsSection.removeAttribute('hidden');
-  elements.resultsSection.scrollIntoView({ behavior: 'smooth' });
+  
+  // Add to history & save (async - doesn't block UI)
+  addToHistory(state.lastCalculation);
+  
+  // Scroll smoothly (defer to next frame)
+  requestAnimationFrame(() => {
+    elements.resultsSection.scrollIntoView({ behavior: 'smooth' });
+  });
 }
 
 /**
@@ -302,7 +310,7 @@ function getBMICategory(bmi) {
 }
 
 /**
- * Display results
+ * Display results - OPTIMIZED
  */
 function displayResults(bmi, category, weight, height, age, gender) {
   // Update BMI value
@@ -464,15 +472,29 @@ function clearHistory() {
 }
 
 /**
- * Save history to localStorage
+ * Save history to localStorage - ASYNC (non-blocking)
  */
 function saveHistory() {
   try {
-    const historyData = state.history.map((item) => ({
-      ...item,
-      timestamp: item.timestamp.toISOString()
-    }));
-    localStorage.setItem('bmiHistory', JSON.stringify(historyData));
+    // Use requestIdleCallback for non-urgent operations
+    if (window.requestIdleCallback) {
+      requestIdleCallback(() => {
+        const historyData = state.history.map((item) => ({
+          ...item,
+          timestamp: item.timestamp.toISOString()
+        }));
+        localStorage.setItem('bmiHistory', JSON.stringify(historyData));
+      });
+    } else {
+      // Fallback for browsers without requestIdleCallback
+      setTimeout(() => {
+        const historyData = state.history.map((item) => ({
+          ...item,
+          timestamp: item.timestamp.toISOString()
+        }));
+        localStorage.setItem('bmiHistory', JSON.stringify(historyData));
+      }, 0);
+    }
   } catch (e) {
     console.error('Error saving history:', e);
   }
