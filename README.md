@@ -174,34 +174,10 @@ This calculator provides general estimates and should not be used as a substitut
 - **FCP:** < 0.5s
 - **Zero External Requests** (when used locally)
 
-## 🔧 Customization
 
-### Change Primary Color
-Edit `styles.css`:
-```css
-:root {
-  --primary-color: #007BFF; /* Change this */
-  --primary-dark: #0056b3;
-}
-```
 
-### Modify Health Tips
-Edit the `healthTips` object in `app.js`:
-```javascript
-const healthTips = {
-  underweight: {
-    title: 'Your custom title',
-    tips: ['Tip 1', 'Tip 2', ...]
-  }
-  // ...
-}
-```
 
-### Change Activity Multiplier for TDEE
-Edit `app.js` in the `displayMetrics()` function:
-```javascript
-const tdee = Math.round(bmr * 1.55); // Change 1.55 multiplier
-```
+
 
 ## 📝 License
 
