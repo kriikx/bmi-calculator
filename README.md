@@ -51,7 +51,7 @@ bmi-calculator/
 
 ### Quick Start
 
-1. Open `index.html` in a web browser
+1. Open `https://bmi-calculator-lac-six.vercel.app/` in a web browser
 2. Select your unit system (Metric or Imperial)
 3. Enter your weight and height
 4. (Optional) Enter age and gender for additional health metrics
