@@ -227,7 +227,7 @@ A: History is stored in your browser's localStorage. It will persist until you c
 **Q: Can I export my calculation history?**
 A: Currently, history is stored locally. You can take screenshots or manually record your results.
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 Potential features for future versions:
 
