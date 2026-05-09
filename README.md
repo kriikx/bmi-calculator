@@ -37,7 +37,7 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 - **Focus Indicators** - Clear visual focus states
 - **Form Validation** - Error messages accessible to all users
 
-## 📁 File Structure
+##  File Structure
 
 ```
 bmi-calculator/
