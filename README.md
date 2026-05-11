@@ -2,7 +2,7 @@
 
 A professional, production-ready Body Mass Index (BMI) calculator with advanced features and comprehensive health insights.
 
-## 🌟 Features
+##  Features
 
 ### Core Functionality
 
@@ -251,4 +251,4 @@ Potential features for future versions:
 
 ---
 
-Made with ❤️ for your health. Stay fit!! 💪
+Made with ❤️ for your health. Stay fit!!!
