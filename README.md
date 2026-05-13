@@ -104,13 +104,13 @@ EXPOSE 80
 
 **Mifflin-St Jeor Equation:**
 
-For men:
+For men :
 
 ```
 BMR = (10 × weight(kg)) + (6.25 × height(cm)) - (5 × age) + 5
 ```
 
-For women:
+For women :
 
 ```
 BMR = (10 × weight(kg)) + (6.25 × height(cm)) - (5 × age) - 161
