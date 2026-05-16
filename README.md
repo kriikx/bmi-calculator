@@ -47,7 +47,7 @@ bmi-calculator/
 └── README.md           # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Quick Start
 
