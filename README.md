@@ -1,6 +1,6 @@
 # BMI Calculator
 
-A professional, production-ready Body Mass Index (BMI) calculator with advanced features and comprehensive health insights.
+A professional, production-ready **Body Mass Index (BMI) Calculator** built using **HTML, CSS, and JavaScript**. The application is fully responsive, containerized with **Docker (Nginx)**, and deployed on **Render** for fast and reliable access.
 
 ##  Features
 
@@ -19,6 +19,16 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 - **Calculation History** - Persistent storage of last 10 calculations (localStorage)
 - **Visual BMI Chart** - Color-coded BMI category visualization
 - **Dark Mode Support** - Automatic light/dark mode based on system preferences
+
+### Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Docker
+- Nginx
+- Render
+- Git & GitHub
 
 ### User Experience
 
@@ -43,7 +53,8 @@ A professional, production-ready Body Mass Index (BMI) calculator with advanced 
 bmi-calculator/
 ├── index.html          # Semantic HTML with accessibility features
 ├── styles.css          # Responsive styles with dark mode support
-├── app.js              # Clean, modular JavaScript (production-ready)
+├── app.js
+|-- Dockerfile              # Clean, modular JavaScript (production-ready)
 └── README.md           # This file
 ```
 
@@ -85,12 +96,40 @@ git push origin main
 # Deploy with zero configuration
 ```
 
-#### Docker
+### 🐳 Docker
+
+This application is fully containerized using **Docker** and served with **Nginx**.
+
+### Dockerfile
 
 ```dockerfile
 FROM nginx:alpine
-COPY bmi-calculator/ /usr/share/nginx/html/
-EXPOSE 80
+
+COPY . /usr/share/nginx/html
+
+EXPOSE 8080
+```
+## 🚀 Deployment
+
+This project is deployed using:
+
+- **Docker** for containerization
+- **Nginx** as the web server
+- **Render** for cloud hosting
+- **GitHub** for version control and automatic deployments
+
+Deployment Workflow:
+
+```text
+GitHub
+    ↓
+Render
+    ↓
+Docker Build
+    ↓
+Nginx Container
+    ↓
+Live Website
 ```
 
 ## 📊 Health Formulas
