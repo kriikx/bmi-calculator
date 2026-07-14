@@ -53,16 +53,16 @@ A professional, production-ready **Body Mass Index (BMI) Calculator** built usin
 bmi-calculator/
 ├── index.html          # Semantic HTML with accessibility features
 ├── styles.css          # Responsive styles with dark mode support
-├── app.js
-|-- Dockerfile              # Clean, modular JavaScript (production-ready)
-└── README.md           # This file
+├── app.js              # Clean, modular JavaScript (production-ready)
+|-- Dockerfile              
+└── README.md           
 ```
 
 ##  Getting Started
 
 ### Quick Start
 
-1. Open `https://bmi-calculator-lac-six.vercel.app/` in a web browser
+1. Open `https://bmi-calculator-j1g6.onrender.com/` in a web browser
 2. Select your unit system (Metric or Imperial)
 3. Enter your weight and height
 4. (Optional) Enter age and gender for additional health metrics
