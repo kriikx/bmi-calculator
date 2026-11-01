@@ -268,7 +268,7 @@ A: Currently, history is stored locally. You can take screenshots or manually re
 
 ##  Future Enhancements
 
-Potential features for future versions:
+Potential features for future versions :
 
 - [ ] Export history as CSV/PDF
 - [ ] Share results via QR code
