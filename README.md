@@ -290,4 +290,4 @@ Potential features for future versions:
 
 ---
 
-Made with ❤️ for your health. Stay fit 💪🏻!!!
+Made with ❤️ for your health. Stay fit 💪🏻!!
